@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+html,
+body {
+    box-sizing: border-box;
+}
+
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+* {
+    margin: 0;
+}
+
+body {
+    background-color: hsl(0, 0%, 95%);
+}
+
+
+main {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.container {
+    width: 325px;
+    /* height: 1320px; */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 88px auto;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.sedan,
+.suvs,
+.luxury {
+    width: 100%;
+    height: 442px;
+    padding: 49px;
+}
+
+
+.sedan {
+    background-color: hsl(31, 77%, 52%);
+}
+
+.suvs {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.luxury {
+    background-color: hsl(179, 100%, 13%);
+}
+
+.type {
+    color: hsl(0, 0%, 95%);
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    margin: 30px auto;
+}
+
+.car-desc {
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 0.93rem;
+    line-height: 1.56rem;
+    margin-top: -4px;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: hsl(0, 0%, 95%);
+    border: 2px solid transparent;
+    margin: 13px;
+    margin-left: 0;
+    padding: 12px 30px;
+    font-size: 0.98rem;
+    font-family: 'Lexend Deca', sans-serif;
+    letter-spacing: -0.4px;
+    border-radius: 50px;
+}
+
+button:hover {
+    color: hsl(0, 0%, 95%);
+    border: 2px solid hsl(0, 0%, 95%);
+    background-color: transparent;
+}
+
+.learn-more-sedan {
+    color: hsl(31, 77%, 52%);
+}
+
+.learn-more-suvs {
+    color: hsl(184, 100%, 22%);
+}
+
+.learn-more-luxury {
+    color: hsl(179, 100%, 13%);
+}
+
+.attribution {
+    font-size: 16px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 768px) {
+    main {
+        justify-items: center;
+    }
+
+    .container {
+        flex-direction: row;
+        width: 920px;
+        height: 500px;
+        margin-top: 145px;
+    }
+
+    .sedan,
+    .suvs,
+    .luxury {
+        width: 100%;
+        height: 100%;
+        padding: 49px;
+    }
+
+    .car-desc {
+        margin-bottom: 70px;
+    }
+}
