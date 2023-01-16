@@ -81,7 +81,7 @@ main {
     margin-bottom: 10px;
 }
 
-button {
+a {
     background-color: hsl(0, 0%, 95%);
     border: 2px solid transparent;
     margin: 13px;
@@ -91,12 +91,15 @@ button {
     font-family: 'Lexend Deca', sans-serif;
     letter-spacing: -0.4px;
     border-radius: 50px;
+    cursor: pointer;
+    text-decoration: none;
 }
 
-button:hover {
+a:hover {
     color: hsl(0, 0%, 95%);
     border: 2px solid hsl(0, 0%, 95%);
     background-color: transparent;
+    transition: all 0.25s 0s linear;
 }
 
 .learn-more-sedan {
